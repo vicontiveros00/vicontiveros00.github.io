@@ -38,7 +38,7 @@ class NavBar extends React.Component {
                 <button type="button" className={classNameForBurger} onClick={this.toggleMenuOpen}>
                     <span className="material-icons">menu</span>
                 </button>
-                <h1 className="navbar-title">Victor Ontiveros • Frontend Developer</h1>
+                <p className="navbar-title">Vic • Frontend Developer</p>
                 <nav className="navbar-menu">
                     <button type="button" className="nav-item">
                         <a href="#projects">Projects</a>

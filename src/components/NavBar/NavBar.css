@@ -1,4 +1,5 @@
 button {
+    font-size: 1rem;
     border: 0;
     padding: 0;
     font-family: inherit;
@@ -8,6 +9,8 @@ button {
 }
 
 .navbar {
+    font-size: 1rem;
+    font-weight: 300;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -23,7 +26,7 @@ button {
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 804px) {
+@media only screen and (min-width: 860px) {
     .navbar {
       justify-content: space-between;
       padding: 0 0 0 16px;
@@ -61,7 +64,7 @@ nav.open .navbar-overlay {
 
 .navbar-title {
     margin: 0;
-    font-size: 16px;
+    font-weight: 800;
 }
 
 .navbar-menu {
@@ -91,7 +94,7 @@ nav.open .navbar-menu {
     visibility: visible;
 }
 
-@media only screen and (min-width: 804px) {
+@media only screen and (min-width: 860px) {
     .navbar-menu {
       position: static;
       translate: 0 0;
@@ -109,7 +112,7 @@ nav.open .navbar-menu {
 }
 
 
-@media only screen and (min-width: 804px) {
+@media only screen and (min-width: 860px) {
     .navbar-burger, .navbar-overlay {
       display: none;
     }
