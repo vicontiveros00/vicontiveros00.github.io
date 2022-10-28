@@ -13,6 +13,7 @@ body {
   background-image: url('../src/media/background.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Poppins";
 }
 
 a {
