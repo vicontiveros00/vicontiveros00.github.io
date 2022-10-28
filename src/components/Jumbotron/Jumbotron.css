@@ -1,0 +1,27 @@
+.jumbotron {
+    margin: 64px auto 0 auto; /*accomodate for height of navbar*/
+    height: 23rem;
+    width: 80%;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.jumbotron-img {
+    width: 250px;
+}
+
+.jumbotron-text {
+    min-width: 400px;
+    max-width: 700px;
+}
+
+.jumbotron-img, .jumbotron-text {
+    margin: 15px;
+}

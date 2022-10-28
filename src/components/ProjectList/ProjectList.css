@@ -1,0 +1,12 @@
+.projects-container {
+    width: 80%;
+    margin: 4.4rem 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects-title {
+    margin-top: 128px;
+    text-align: center;
+}

@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Jumbotron from './components/Jumbotron/Jumbotron';
+import NavBar from './components/NavBar/NavBar';
+import ProjectList from './components/ProjectList/ProjectList';
+import projects from './util/Projects';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Jumbotron />
+      <ProjectList projects={projects}/>
     </div>
   );
 }
