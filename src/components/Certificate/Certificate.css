@@ -32,3 +32,10 @@
     line-height: 1rem;
     margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 500px) {
+    .Certificate {
+      width: 100%;
+      margin: 0 0 2.3rem 0;
+    }
+}

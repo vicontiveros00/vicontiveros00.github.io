@@ -23,7 +23,7 @@ class Skills extends React.Component {
                     output: true,
                     isLoading: false
                 })
-              }, 2000);              
+              }, 2000); //simulate API call             
         }
 
         const skillList = '{ \'HTML5\', \'CSS3\', \'Bootstrap\', \'JavaScript\', \'React\', \'SQL\', \'Node.js\', \'Github\', \'REST APIs with Express.js\' }';
@@ -34,6 +34,7 @@ class Skills extends React.Component {
                 <div className="fake-ide">
                     <div className="ide-numbers">
                         <ol>
+                            <li></li>
                             <li></li>
                             <li></li>
                             <li></li>
@@ -49,7 +50,7 @@ class Skills extends React.Component {
                     </div>
                 </div>
                 <div className="buttons-container">
-                    <button className="run-button" onClick={renderOutput}>Run the code to see my skills!</button>
+                    <button className="run-button" onClick={renderOutput}>Run to see skills</button>
                     <button className="run-button" onClick={() => {
                         this.setState({
                             output: false,

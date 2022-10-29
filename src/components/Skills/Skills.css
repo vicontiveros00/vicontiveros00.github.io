@@ -25,8 +25,9 @@ textarea {
     resize: none;
     color: #008223;
     font-size: 1.3rem;
-    -moz-appearance:none;
+    /*-moz-appearance:none;*/
     outline:0px none transparent;
+    line-height: 1.6rem;
 }
 
 textarea:focus, input:focus{
@@ -43,14 +44,18 @@ textarea:focus, input:focus{
     color: #008223;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 1.2rem;
+    overflow-wrap: break-word;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .ide-numbers {
-    padding-top: 10px;
+    padding-top: 12px;
     background-color: #19191d;
     width: 2rem;
     font-family: 'Ubuntu Mono', monospace;
-    line-height: 1.53rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
 }
 
 ol { 
@@ -68,7 +73,7 @@ ol li {
     margin: 0 auto;
     border-radius: 10px;
     background-color: #19191d;
-    padding: 0.4rem 0.5rem;
+    padding: 10px;
     box-shadow: 5px 5px #121212;
     border: 1px solid #000;
 }
@@ -99,4 +104,14 @@ ol li {
     max-width: 40rem;
     display: flex;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 500px) {
+    .fake-ide {
+      width: 95%;
+    }
+
+    .ide-output {
+        width: 20rem;
+    }
 }

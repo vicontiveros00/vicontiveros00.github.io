@@ -41,7 +41,9 @@ class NavBar extends React.Component {
                     <button type="button" className="nav-item">
                         <a href="#skills">Skills</a>
                     </button>
-                    <button type="button" className="nav-item">Facts</button>
+                    <button type="button" className="nav-item">
+                        <a href="#facts">Facts</a>
+                    </button>
                     <button type="button" className="nav-item">Contact</button>
                     <button type="button" className="nav-item">
                         <a href="https://github.com/vicontiveros00">Github</a>

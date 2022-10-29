@@ -6,6 +6,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .j-text {
@@ -22,4 +25,14 @@
 
 .jumbotron-img, .jumbotron-text {
     margin: 15px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        padding-top: 30px;
+    }
+    100% {
+        opacity: 1;
+    }
 }
