@@ -32,6 +32,20 @@ const projects = [
         liveUrl: 'https://www.drillcom.fi/',
         repo: '',
         src: Hattara
+    },
+    {
+        id: 5,
+        name: 'Mini Lodash Library',
+        description: 'A collection of Leetcode questions',
+        repo: '',
+        src: Hattara
+    },
+    {
+        id: 6,
+        name: 'Boss Machine',
+        description: 'REST API written with Express.js',
+        repo: '',
+        src: Hattara
     }
 ]
 

@@ -1,5 +1,5 @@
 .jumbotron {
-    margin: 64px auto 0 auto; /*accomodate for height of navbar*/
+    margin: 128px auto 0 auto; /*accomodate for height of navbar*/
     width: 80%;
     max-width: 1500px;
     display: flex;

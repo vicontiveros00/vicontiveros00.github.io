@@ -1,6 +1,6 @@
 import React from 'react';
 import './Jumbotron.css';
-import ProfilePic from '../../media/hattara.png'
+import ProfilePic from '../../media/vic.png'
 
 class Jumbotron extends React.Component {
     render() {

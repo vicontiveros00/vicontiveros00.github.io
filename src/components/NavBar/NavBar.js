@@ -19,18 +19,10 @@ class NavBar extends React.Component {
         //console.log(this.state.toggleMenu);
     }
 
-    toggleActive = () => {
-        
-    }
-
     render() {
-
         const classNameForBurger = `navbar-burger ${this.state.toggleMenu}`;
-
         const classNameForOverlay = `navbar-overlay ${this.state.toggleMenu}`;
-
         const classNameForNavbar = `navbar ${this.state.toggleMenu}`;
-
 
         return (
             <nav className={classNameForNavbar}>
@@ -43,10 +35,17 @@ class NavBar extends React.Component {
                     <button type="button" className="nav-item">
                         <a href="#projects">Projects</a>
                     </button>
-                    <button type="button" className="nav-item">Certificates</button>
-                    <button type="button" className="nav-item">Skills</button>
+                    <button type="button" className="nav-item">
+                        <a href="#certificates">Certificates</a>
+                    </button>
+                    <button type="button" className="nav-item">
+                        <a href="#skills">Skills</a>
+                    </button>
                     <button type="button" className="nav-item">Facts</button>
                     <button type="button" className="nav-item">Contact</button>
+                    <button type="button" className="nav-item">
+                        <a href="https://github.com/vicontiveros00">Github</a>
+                    </button>
                     <button type="button" className="nav-item">
                         <a href="https://vicontiveros00.github.io/vics-cv/">My CV</a>
                     </button>

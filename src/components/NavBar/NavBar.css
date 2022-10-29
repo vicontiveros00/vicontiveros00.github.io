@@ -26,7 +26,7 @@ button {
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 860px) {
+@media only screen and (min-width: 920px) {
     .navbar {
       justify-content: space-between;
       padding: 0 0 0 16px;
@@ -94,7 +94,7 @@ nav.open .navbar-menu {
     visibility: visible;
 }
 
-@media only screen and (min-width: 860px) {
+@media only screen and (min-width: 920px) {
     .navbar-menu {
       position: static;
       translate: 0 0;
@@ -112,7 +112,7 @@ nav.open .navbar-menu {
 }
 
 
-@media only screen and (min-width: 860px) {
+@media only screen and (min-width: 920px) {
     .navbar-burger, .navbar-overlay {
       display: none;
     }

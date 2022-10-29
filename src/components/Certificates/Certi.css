@@ -1,4 +1,4 @@
-.projects-container {
+.certificates-container {
     width: 80%;
     margin: 4.4rem 10%;
     display: flex;
@@ -6,7 +6,7 @@
     flex-wrap: wrap;
 }
 
-.projects-title {
+.certificates-title {
     margin-top: 128px;
     text-align: center;
 }
