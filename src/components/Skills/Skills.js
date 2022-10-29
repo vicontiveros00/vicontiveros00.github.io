@@ -30,7 +30,7 @@ class Skills extends React.Component {
 
         return (
             <>
-                <h1 className="skills-title" id="skills">Skillset</h1>
+                <h1 className="skills-title" id="skills">Skill set</h1>
                 <div className="fake-ide">
                     <div className="ide-numbers">
                         <ol>
@@ -41,7 +41,7 @@ class Skills extends React.Component {
                             <li></li>
                         </ol>
                     </div>
-                    <textarea value=" SELECT *
+                    <textarea className="ide" value=" SELECT *
                     FROM skills;
                     --sqlite 3.39.4" />
                     <div className="ide-output"> {
@@ -50,7 +50,7 @@ class Skills extends React.Component {
                     </div>
                 </div>
                 <div className="buttons-container">
-                    <button className="run-button" onClick={renderOutput}>Run to see skills</button>
+                    <button className="run-button" onClick={renderOutput}>Run SQL Query</button>
                     <button className="run-button" onClick={() => {
                         this.setState({
                             output: false,

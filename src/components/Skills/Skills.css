@@ -15,7 +15,7 @@
     box-shadow: 10px 10px #121212;
 }
 
-textarea {
+.ide {
     padding-top: 10px;
     overflow: hidden;
     height: 20rem;
@@ -30,7 +30,7 @@ textarea {
     line-height: 1.6rem;
 }
 
-textarea:focus, input:focus{
+.ide:focus, input:focus{
     outline: 0;
 }
 

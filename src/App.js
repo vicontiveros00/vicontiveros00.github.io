@@ -21,6 +21,9 @@ function App() {
       <Skills />
       <FunFacts />
       <Contact />
+      <div className="footer">
+        <p>&copy;Vic</p>
+      </div>
     </div>
   );
 }

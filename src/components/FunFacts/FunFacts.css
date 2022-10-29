@@ -51,6 +51,10 @@
     margin-left: 10px;
 }
 
+hr {
+  color: inherit;
+}
+
 @keyframes driving {
   0% {
     transform: translateY(0);
