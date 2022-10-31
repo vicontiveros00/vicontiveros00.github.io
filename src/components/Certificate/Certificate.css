@@ -10,6 +10,15 @@
     border: 1px solid #000;
     box-shadow: 10px 10px #121212;
     overflow: hidden;
+    transition: all .4sec ease-in-out;
+}
+
+.certificate-link {
+    color: #f8f8f8;
+}
+
+.Certificate:hover {
+    transform: scale(1.02);
 }
 
 .Certificate .image-container {
@@ -37,5 +46,9 @@
     .Certificate {
       width: 100%;
       margin: 0 0 2.3rem 0;
+    }
+
+    .Certificate h2 {
+        font-size: 1.2rem;
     }
 }

@@ -1,18 +1,22 @@
 .Project {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 19rem;
+    height: 30rem;
+    width: 22rem;
     margin: 0 2.3rem 2.3rem 2.3rem;
     text-align: center;
     background-color: #19191d;
     border-radius: 10px;
     border: 1px solid #000;
     box-shadow: 10px 10px #121212;
+    overflow: hidden;
+}
+
+.Project img {
+    height: 100%;
 }
 
 .Project .image-container {
-    height: 16.66rem;
     margin-bottom: 1rem;
 }
 
@@ -37,7 +41,18 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 1rem;
-    text-decoration: underline;
+}
+
+.project-links a {
+    color: #f3f3f3;
+    border-radius: 10px;
+    padding: 2px 12px;
+    background-color: #363636;
+}
+
+.project-links a:hover {
+    background-color: rgb(36, 36, 36);
+    top: 2px;
 }
 
 @media only screen and (max-width: 500px) {

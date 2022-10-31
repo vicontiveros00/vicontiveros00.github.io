@@ -41,9 +41,11 @@ class Skills extends React.Component {
                             <li></li>
                         </ol>
                     </div>
-                    <textarea className="ide" value=" SELECT *
-                    FROM skills;
-                    --sqlite 3.39.4" />
+                    <div className="ide-input">
+                        <span className="blue">SELECT</span> <span className="asterisk">*</span> <br />
+                        <span className="blue">FROM</span> skills;<br />
+                        <span className="comment">--sqlite 3.39.4</span><span className="blinking">|</span>
+                    </div>
                     <div className="ide-output"> {
                         this.state.isLoading ? <img src={Spinner} className = "spinner" alt='fetching from database...' /> : this.state.output && skillList
                     }

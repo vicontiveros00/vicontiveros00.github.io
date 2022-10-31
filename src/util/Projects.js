@@ -1,4 +1,9 @@
-import Hattara from '../media/hattara.png'
+//import Hattara from '../media/hattara.png'; here for testing purposes
+import Drillcom from '../media/drillcom.png';
+import Ravenous from '../media/ravenous.gif';
+import Jammming from '../media/jammming.gif';
+import VicJS from '../media/vicjs.png';
+import BossMachine from '../media/boss.png';
 
 const projects = [
     {
@@ -7,7 +12,7 @@ const projects = [
         description: 'A React app that searches for restaurants based off ratings.',
         liveUrl: 'https://ravenousfood-vic.surge.sh/',
         repo: 'https://github.com/vicontiveros00/Ravenous',
-        src: Hattara
+        src: Ravenous
     },
     {
         id: 2,
@@ -15,15 +20,15 @@ const projects = [
         description: 'Use the Spotify API to quickly make playlists in your library.',
         liveUrl: 'https://jammmingvic.surge.sh/',
         repo: 'https://github.com/vicontiveros00/Jamming-Spotify',
-        src: Hattara
+        src: Jammming
     },
     {
         id: 3,
-        name: 'Salary Trends in the US',
-        description: 'DOM manipulation without the use of React.',
+        name: 'vic.js',
+        description: 'My own npm library that\'s constantly expanding.',
         liveUrl: '',
-        repo: 'https://github.com/vicontiveros00/salary-trends',
-        src: Hattara
+        repo: 'https://github.com/vicontiveros00/vics-library',
+        src: VicJS
     },
     {
         id: 4,
@@ -31,21 +36,14 @@ const projects = [
         description: 'Drillcom Oy\'s official website made with Bootstrap.',
         liveUrl: 'https://www.drillcom.fi/',
         repo: '',
-        src: Hattara
+        src: Drillcom
     },
     {
         id: 5,
-        name: 'Mini Lodash Library',
-        description: 'A collection of Leetcode questions',
-        repo: '',
-        src: Hattara
-    },
-    {
-        id: 6,
         name: 'Boss Machine',
         description: 'REST API written with Express.js',
-        repo: '',
-        src: Hattara
+        repo: 'https://github.com/vicontiveros00/boss-machine-project',
+        src: BossMachine
     }
 ]
 
