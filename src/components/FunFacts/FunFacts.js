@@ -1,5 +1,6 @@
 import React from "react";
 import "./FunFacts.css";
+import ReactLogo from '../../media/react.png';
 
 class FunFacts extends React.Component {
     render() {
@@ -11,6 +12,7 @@ class FunFacts extends React.Component {
                 <p>I can type up to 100 WPM (US Layout) putting me at the 90th percentile. &#9000;</p>
                 <p>Cooking &#127858; and retro video gaming &#127918; are what I do most outside of coding.</p>
                 <p>Back in the States I owned a sports car and raced on local race tracks.  <span className="driving">&#128663;</span><br /><span style={{fontSize: '1rem'}}>(A 1996 Mazda Miata for those interested.)</span></p>
+                <p>This site is built with React! <span><img src={ReactLogo} alt = "Weee I'm spinnig!" className="react-logo"/></span></p>
             </div>
         )
     }
