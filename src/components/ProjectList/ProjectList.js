@@ -6,7 +6,7 @@ class ProjectList extends React.Component {
     render() {
         return (
             <>
-                <h1 className="projects-title" id="projects">Projects</h1>
+                <h1 className="projects-title" id="projects">Recent Projects</h1>
                 <div className="projects-container">
                         {
                         this.props.projects.map((project) => {
