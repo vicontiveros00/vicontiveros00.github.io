@@ -17,6 +17,7 @@
 
 .jumbotron-img {
     width: 250px;
+    border-radius: 20%;
 }
 
 .jumbotron-text {
