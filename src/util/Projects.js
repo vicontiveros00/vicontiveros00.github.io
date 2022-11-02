@@ -41,7 +41,7 @@ const projects = [
     {
         id: 5,
         name: 'Boss Machine',
-        description: 'REST API written with Express.js',
+        description: 'API written with Express.js',
         repo: 'https://github.com/vicontiveros00/boss-machine-project',
         src: BossMachine
     }

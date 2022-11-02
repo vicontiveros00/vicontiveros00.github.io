@@ -2,6 +2,7 @@ import IntermediateJavaScript from '../media/intermediate-javascript.PNG';
 import Git from '../media/learn-git.PNG';
 import WebDev from '../media/web-dev.PNG';
 import InteractiveJavaScript from '../media/build-javascript.PNG';
+import Express from '../media/express.PNG';
 
 const certificates = [
     {
@@ -27,6 +28,12 @@ const certificates = [
         name: 'Codecademy: Building Interactive JavaScript Websites Course',
         href: 'https://www.codecademy.com/profiles/vicontiveros/certificates/36ae898a1d1c8524815305b2d1d2ebab',
         src: InteractiveJavaScript
+    },
+    {
+        id: 5,
+        name: 'Codecademy: Learn Express.js',
+        href: 'https://www.codecademy.com/profiles/vicontiveros/certificates/85396dd6e2e850ab34e904243aa464c6',
+        src: Express
     }
 ]
 
