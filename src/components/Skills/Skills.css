@@ -13,7 +13,7 @@
     overflow: hidden;
     width: 80%;
     max-width: 40rem;
-    box-shadow: 10px 10px #121212;
+    filter: drop-shadow(3px 3px 4px #000);
 }
 
 .ide-input {
@@ -67,7 +67,7 @@ ol li {
     border-radius: 10px;
     background-color: #19191d;
     padding: 10px;
-    box-shadow: 5px 5px #121212;
+    filter: drop-shadow(3px 3px 4px #000);
     border: 1px solid #000;
 }
 
