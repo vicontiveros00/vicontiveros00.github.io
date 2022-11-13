@@ -76,6 +76,10 @@ input, #message {
     animation: 1.2s linear infinite spinner;
 }
 
+#email {
+    font-family: "Poppins";
+}
+
 @keyframes spinner {
     0% {
       transform: rotate(0deg);
