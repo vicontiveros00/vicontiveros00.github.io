@@ -26,7 +26,7 @@ class Skills extends React.Component {
               }, 2000); //simulate API call             
         }
 
-        const skillList = '{ \'HTML5\', \'CSS3\', \'Bootstrap\', \'JavaScript\', \'React\', \'SQL\', \'Node.js\', \'Github\', \'APIs with Express.js\' }';
+        const skillList = '{ \'HTML5\', \'CSS3\', \'Bootstrap\', \'JavaScript\', \'React\', \'SQL\', \'Node.js\', \'Git\', \'APIs with Express.js\' }';
 
         return (
             <>
