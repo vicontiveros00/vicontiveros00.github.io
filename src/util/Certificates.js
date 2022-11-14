@@ -31,7 +31,7 @@ const certificates = [
     },
     {
         id: 5,
-        name: 'Codecademy: Learn Express.js',
+        name: 'Codecademy: Handling APIs in Express.js',
         href: 'https://www.codecademy.com/profiles/vicontiveros/certificates/85396dd6e2e850ab34e904243aa464c6',
         src: Express
     }

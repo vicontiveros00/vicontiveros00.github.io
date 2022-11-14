@@ -5,6 +5,7 @@ import Jammming from '../media/jammming.gif';
 import VicJS from '../media/vicjs.png';
 import BossMachine from '../media/boss.png';
 import PikkuUrl from '../media/pikkuurl.gif';
+import Cards from '../media/cards.gif';
 
 const projects = [
     {
@@ -33,6 +34,21 @@ const projects = [
     },
     {
         id: 4,
+        name: 'Boss Machine',
+        description: 'An API for evil masterminds written with Express.js',
+        repo: 'https://github.com/vicontiveros00/boss-machine-project',
+        src: BossMachine
+    },
+    {
+        id: 5,
+        name: 'Pushing my CSS Skills',
+        description: 'Lots of animations and use of bezier curves',
+        liveUrl: 'http://cool-rabbit-cards.surge.sh/',
+        repo: 'https://github.com/vicontiveros00/cool-rabbit-cards',
+        src: Cards
+    },
+    {
+        id: 6,
         name: 'vic.js',
         description: 'My own npm library that\'s constantly expanding.',
         liveUrl: '',
@@ -40,20 +56,13 @@ const projects = [
         src: VicJS
     },
     {
-        id: 5,
+        id: 7,
         name: 'Drillcom',
         description: 'Drillcom Oy\'s official website made with Bootstrap.',
         liveUrl: 'https://www.drillcom.fi/',
         repo: '',
         src: Drillcom
     },
-    {
-        id: 6,
-        name: 'Boss Machine',
-        description: 'An API for evil masterminds written with Express.js',
-        repo: 'https://github.com/vicontiveros00/boss-machine-project',
-        src: BossMachine
-    }
 ]
 
 export default projects;
