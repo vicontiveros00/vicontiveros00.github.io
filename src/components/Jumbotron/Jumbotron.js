@@ -33,15 +33,33 @@ class Jumbotron extends React.Component {
         }
         return this.state.greeting;
     }
+
+    setFontSize() {
+        if (window.innerWidth <= 500) {
+            return {
+               fontSize: '1.4rem',
+               textAlign: 'center',
+               marginTop: '2rem'
+            }
+        } 
+    }
+
+    setCenter() {
+        if (window.innerWidth <= 500) {
+            return {
+                textAlign: 'center'
+            }
+        }
+    }
     
     render() {
         return (
             <div className="jumbotron">
                 <img className="jumbotron-img" src={ProfilePic} alt="hattara the rabbit" />
                 <div className="jumbotron-text">
-                    <h1>{this.changeGreeting()} I'm Vic.</h1>
+                    <h1 style={this.setFontSize()}>{this.changeGreeting()} I'm Vic.</h1>
                     <br />
-                    <p className="j-text">I'm an aspiring front end developer who loves to continuously learn through building projects.<br />Based in Nokia, Finland. &#127467;&#127470;</p>
+                    <p className="j-text" style={this.setCenter()}>I'm an aspiring front end developer who loves to continuously learn through building projects.<br />Based in Nokia, Finland. &#127467;&#127470;</p>
                 </div>
             </div>
         )
