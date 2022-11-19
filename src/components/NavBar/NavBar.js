@@ -1,4 +1,5 @@
 import React from 'react';
+import logos from '../../util/logos';
 import './NavBar.css'
 
 class NavBar extends React.Component {
@@ -32,26 +33,29 @@ class NavBar extends React.Component {
                 </button>
                 <p className="navbar-title">Vic • Frontend Developer</p>
                 <nav className="navbar-menu">
-                    <button type="button" className="nav-item">
+                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
                         <a href="#projects">Projects</a>
                     </button>
-                    <button type="button" className="nav-item">
+                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
                         <a href="#certificates">Certificates</a>
                     </button>
-                    <button type="button" className="nav-item">
+                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
                         <a href="#skills">Skills</a>
                     </button>
-                    <button type="button" className="nav-item">
+                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
                         <a href="#facts">Facts</a>
                     </button>
-                    <button type="button" className="nav-item">
+                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
                         <a href="#contact">Contact</a>
                     </button>
-                    <button type="button" className="nav-item">
-                        <a href="https://github.com/vicontiveros00">Github</a>
+                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
+                        <a target="_blank" href="https://vicontiveros00.github.io/vics-cv/">My CV</a>
                     </button>
-                    <button type="button" className="nav-item">
-                        <a href="https://vicontiveros00.github.io/vics-cv/">My CV</a>
+                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
+                        <a target="_blank" href="https://github.com/vicontiveros00">{logos.github}</a>
+                    </button>
+                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
+                        <a target="_blank" href="https://www.linkedin.com/in/vicontiveros/">{logos.linkedin}</a>
                     </button>
                 </nav>
             </nav>

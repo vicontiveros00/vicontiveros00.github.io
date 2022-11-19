@@ -63,6 +63,14 @@ nav.open .navbar-overlay {
     padding: 0;
 }
 
+.close-menu {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+
 .navbar-title {
     margin: 0;
     font-weight: 800;
@@ -95,6 +103,8 @@ nav.open .navbar-menu {
     visibility: visible;
 }
 
+
+
 @media only screen and (min-width: 920px) {
     .navbar-menu {
       position: static;
@@ -117,4 +127,12 @@ nav.open .navbar-menu {
     .navbar-burger, .navbar-overlay {
       display: none;
     }
+}
+
+svg {
+    fill: rgba(255, 255, 255, 0.7) !important;
+}
+
+svg:hover {
+    fill: rgb(255, 255, 255) !important;
 }

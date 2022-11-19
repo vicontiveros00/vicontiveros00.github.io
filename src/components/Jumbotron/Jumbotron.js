@@ -1,69 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Jumbotron.css';
 import ProfilePic from '../../media/vic-himself.png'
 
-class Jumbotron extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            greeting: 'Moi!'
-        }
-    }
-
-    changeGreeting() {
-        const time = 2000;
-        if (this.state.greeting === 'Moi!') {
-            setTimeout(() => {
-                this.setState({
-                    greeting: 'Hey!'
-                })
-            }, time)
-        } else if (this.state.greeting === 'Hey!') {
-            setTimeout(() => {
-                this.setState({
-                    greeting: '¡Buen día!'
-                })
-            }, time)
-        } else {
-            setTimeout(() => {
-                this.setState({
-                    greeting: 'Moi!'
-                })
-            }, time)
-        }
-        return this.state.greeting;
-    }
-
-    setFontSize() {
-        if (window.innerWidth <= 500) {
-            return {
-               fontSize: '1.4rem',
-               textAlign: 'center',
-               marginTop: '2rem'
-            }
-        } 
-    }
-
-    setCenter() {
-        if (window.innerWidth <= 500) {
-            return {
-                textAlign: 'center'
-            }
-        }
-    }
+function Jumbotron() {
+    //jumbotron is a functional component because of the useEffect hook
+    const greetings = ['Moi!', 'Hey!', '¡Buen día!'];
+    const [greetingIndex, setGreetingIndex] = useState(0);
+    const intervalTime = 2000;
     
-    render() {
-        return (
-            <div className="jumbotron">
-                <img className="jumbotron-img" src={ProfilePic} alt="hattara the rabbit" />
-                <div className="jumbotron-text">
-                    <h1 style={this.setFontSize()}>{this.changeGreeting()} I'm Vic.</h1>
-                    <br />
-                    <p className="j-text" style={this.setCenter()}>I'm an aspiring front end developer who loves to continuously learn through building projects.<br />Based in Nokia, Finland. &#127467;&#127470;</p>
-                </div>
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const next = greetingIndex + 1;
+            setGreetingIndex(greetings[next] ? next : 0);
+        }, intervalTime)
+        return () => clearInterval(interval);
+    }, [greetingIndex]);
+    
+    return (
+        <div className="jumbotron">
+            <img className="jumbotron-img" src={ProfilePic} alt="Vic" />
+            <div className="jumbotron-text">
+                <h1>{greetings[greetingIndex]} I'm Vic.</h1>
+                <br />
+                <p className="j-text">I'm an aspiring front end developer who loves to continuously learn through building projects.<br />Based in Nokia, Finland. &#127467;&#127470;</p>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Jumbotron;
