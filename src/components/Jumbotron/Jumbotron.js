@@ -14,6 +14,7 @@ function Jumbotron() {
             setGreetingIndex(greetings[next] ? next : 0);
         }, intervalTime)
         return () => clearInterval(interval);
+        // eslint-disable-next-line
     }, [greetingIndex]);
     
     return (

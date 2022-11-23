@@ -6,10 +6,19 @@ import VicJS from '../media/vicjs.png';
 import BossMachine from '../media/boss.png';
 import PikkuUrl from '../media/pikkuurl.gif';
 import Cards from '../media/cards.gif';
+import Note from '../media/note.PNG'
 
 const projects = [
     {
         id: 1,
+        name: 'Post It',
+        description: 'Live message board written in Next.js with a REST API in Pocketbase',
+        liveUrl: 'https://post-it-topaz.vercel.app/',
+        repo: 'https://github.com/vicontiveros00/post-it',
+        src: Note
+    },
+    {
+        id: 2,
         name: 'pikkuURL',
         description: 'Link shortener and QR code generator in React and Vite',
         liveUrl: 'https://pikkuurl.surge.sh/',
@@ -17,7 +26,7 @@ const projects = [
         src: PikkuUrl
     },
     {
-        id: 2,
+        id: 3,
         name: 'Ravenous',
         description: 'A React app that searches for restaurants based off ratings.',
         liveUrl: 'https://ravenousfood-vic.surge.sh/',
@@ -25,7 +34,7 @@ const projects = [
         src: Ravenous
     },
     {
-        id: 3,
+        id: 4,
         name: 'Jammming',
         description: 'Use the Spotify API to quickly make playlists in your library.',
         liveUrl: 'https://jammmingvic.surge.sh/',
@@ -33,14 +42,14 @@ const projects = [
         src: Jammming
     },
     {
-        id: 4,
+        id: 5,
         name: 'Boss Machine',
         description: 'An API for evil masterminds written with Express.js',
         repo: 'https://github.com/vicontiveros00/boss-machine-project',
         src: BossMachine
     },
     {
-        id: 5,
+        id: 6,
         name: 'Pushing my CSS Skills',
         description: 'Lots of animations and use of bezier curves',
         liveUrl: 'http://cool-rabbit-cards.surge.sh/',
@@ -48,7 +57,7 @@ const projects = [
         src: Cards
     },
     {
-        id: 6,
+        id: 7,
         name: 'vic.js',
         description: 'My own npm library that\'s constantly expanding.',
         liveUrl: '',
@@ -56,7 +65,7 @@ const projects = [
         src: VicJS
     },
     {
-        id: 7,
+        id: 8,
         name: 'Drillcom',
         description: 'Drillcom Oy\'s official website made with Bootstrap.',
         liveUrl: 'https://www.drillcom.fi/',
