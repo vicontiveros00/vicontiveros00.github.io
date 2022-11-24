@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import './Jumbotron.css';
+import './Intro.css';
 import ProfilePic from '../../media/vic-himself.png'
 
-function Jumbotron() {
+function Intro() {
     //jumbotron is a functional component because of the useEffect hook
     const greetings = ['Moi!', 'Hey!', '¡Buen día!'];
     const [greetingIndex, setGreetingIndex] = useState(0);
@@ -18,9 +18,9 @@ function Jumbotron() {
     }, [greetingIndex]);
     
     return (
-        <div className="jumbotron">
-            <img className="jumbotron-img" src={ProfilePic} alt="Vic" />
-            <div className="jumbotron-text">
+        <div className="intro">
+            <img className="intro-img" src={ProfilePic} alt="Vic" />
+            <div className="intro-text">
                 <h1>{greetings[greetingIndex]} I'm Vic.</h1>
                 <br />
                 <p className="j-text">I'm an aspiring front end developer who loves to continuously learn through building projects.<br />Based in Nokia, Finland. &#127467;&#127470;</p>
@@ -29,4 +29,4 @@ function Jumbotron() {
     )
 }
 
-export default Jumbotron;
+export default Intro;

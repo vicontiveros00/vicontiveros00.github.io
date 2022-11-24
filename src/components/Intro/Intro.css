@@ -1,4 +1,4 @@
-.jumbotron {
+.intro {
     margin: 128px auto 0 auto; /*accomodate for height of navbar*/
     width: 80%;
     max-width: 1500px;
@@ -15,17 +15,17 @@
     font-size: 1.3rem;
 }
 
-.jumbotron-img {
+.intro-img {
     width: 250px;
     border-radius: 20%;
     filter: drop-shadow(3px 3px 4px #000);
 }
 
-.jumbotron-text {
+.intro-text {
     max-width: 700px;
 }
 
-.jumbotron-img, .jumbotron-text {
+.intro-img, .intro-text {
     margin: 15px;
 }
 
@@ -40,15 +40,15 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .jumbotron-img {
+    .intro-img {
         width: 10rem;
     }
 
-    .jumbotron {
+    .intro {
         margin-top: 64px;
     }
 
-    .jumbotron h1 {
+    .intro h1 {
         text-align: center;
         font-size: 1.4rem;
         margin-top: 2rem;

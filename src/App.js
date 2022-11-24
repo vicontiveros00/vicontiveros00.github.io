@@ -1,6 +1,6 @@
 import './App.css';
 //components
-import Jumbotron from './components/Jumbotron/Jumbotron';
+import Intro from './components/Intro/Intro';
 import NavBar from './components/NavBar/NavBar';
 import ProjectList from './components/ProjectList/ProjectList';
 import Certi from './components/Certificates/Certi';
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Jumbotron />
+      <Intro />
       <ProjectList projects={projects}/>
       <Certi certificates={certificates} />
       <Skills />
