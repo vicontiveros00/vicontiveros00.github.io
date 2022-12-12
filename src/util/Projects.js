@@ -6,9 +6,18 @@ import VicJS from '../media/vicjs.png';
 import BossMachine from '../media/boss.png';
 import PikkuUrl from '../media/pikkuurl.gif';
 import Cards from '../media/cards.gif';
-import Note from '../media/note.PNG'
+import Note from '../media/note.PNG';
+import Bike from '../media/bikes.gif';
 
 const projects = [
+    {
+        id: 0,
+        name: 'Helsinki Bike App',
+        description: 'View and get info about all bike rental stations in HEL. Full stack project.',
+        liveUrl: 'https://helbikeapp.surge.sh/',
+        repo: 'https://github.com/vicontiveros00/Helsinki-City-Bike-App',
+        src: Bike
+    },
     {
         id: 1,
         name: 'Post It',
