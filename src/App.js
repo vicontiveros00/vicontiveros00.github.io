@@ -11,7 +11,7 @@ import Contact from './components/Contact/Contact';
 import projects from './util/Projects';
 import certificates from './util/Certificates';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <NavBar />

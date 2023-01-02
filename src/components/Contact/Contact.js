@@ -3,8 +3,9 @@ import './Contact.css';
 import Spinner from '../../media/loading.png';
 import { useForm, ValidationError } from '@formspree/react';
 
-function Contact() {
-    
+const Contact = () => {
+    const [email, setEmail] = useState();
+    const [message, setMessage] = useState();
     const [isLoading, setLoading] = useState(false);
 
     const [state, handleSubmit] = useForm("mgeqnddd");
@@ -34,6 +35,9 @@ function Contact() {
                         type="email" 
                         name="email"
                         placeholder="email@email.fi"
+                        onChange={(e) => {
+                            setEmail(e.target.value)
+                        }}
                     /><br />
                     <ValidationError 
                         prefix="Email" 
@@ -47,6 +51,9 @@ function Contact() {
                         id="message"
                         name="message"
                         placeholder="What's up?"
+                        onChange={(e) => {
+                            setMessage(e.target.value)
+                        }}
                         /*onKeyDown={(e) => {
                             if(e.key === 'Enter') {
                                 handleSubmit();
@@ -59,7 +66,7 @@ function Contact() {
                         errors={state.errors}
                     />
                     <button type="submit" className="submit" disabled={state.submitting} onClick={() => {
-                        setLoading(true);
+                        email && message && setLoading(true);
                     }}>
                         {isLoading ? <img src={Spinner} alt="" className="contact-spinner"/> : <p>Submit</p>}
                     </button>
