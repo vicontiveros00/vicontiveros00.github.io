@@ -1,66 +1,35 @@
-import React from 'react';
-import logos from '../../util/logos';
+import React, { useState } from 'react';
+import NavBarElements from '../../util/NavBarElements';
 import './NavBar.css'
 
-class NavBar extends React.Component {
-    constructor (props) {
-        super(props);
+const NavBar = () => {
+    const [ isNavBarActive, setIsNavBarActive ] = useState('');
+    const classNameForBurger = `navbar-burger ${isNavBarActive}`;
+    const classNameForOverlay = `navbar-overlay ${isNavBarActive}`;
+    const classNameForNavbar = `navbar ${isNavBarActive}`;
 
-        this.state = {
-            toggleMenu: ''
-        }
-        this.toggleMenuOpen = this.toggleMenuOpen.bind(this);
+    const toggleMenu = () => {
+        setIsNavBarActive(isNavBarActive === 'active' ? '' : 'active');
     }
 
-    toggleMenuOpen = () => {
-        this.setState({
-            toggleMenu: this.state.toggleMenu === 'open' ? '' : 'open'
-        })
-
-        //console.log(this.state.toggleMenu);
-    }
-
-    render() {
-        const classNameForBurger = `navbar-burger ${this.state.toggleMenu}`;
-        const classNameForOverlay = `navbar-overlay ${this.state.toggleMenu}`;
-        const classNameForNavbar = `navbar ${this.state.toggleMenu}`;
-
-        return (
-            <nav className={classNameForNavbar}>
-                <div className={classNameForOverlay} onClick={this.toggleMenuOpen}></div>
-                <button type="button" className={classNameForBurger} onClick={this.toggleMenuOpen}>
-                    <span className="material-icons">menu</span>
-                </button>
-                <p className="navbar-title">Vic • Frontend Developer</p>
-                <nav className="navbar-menu">
-                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
-                        <a href="#projects">Projects</a>
-                    </button>
-                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
-                        <a href="#certificates">Certificates</a>
-                    </button>
-                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
-                        <a href="#skills">Skills</a>
-                    </button>
-                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
-                        <a href="#facts">Facts</a>
-                    </button>
-                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
-                        <a href="#contact">Contact</a>
-                    </button>
-                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
-                        <a target="_blank" href="https://vicontiveros00.github.io/vics-cv/">My CV</a>
-                    </button>
-                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
-                        <a target="_blank" href="https://github.com/vicontiveros00">{logos.github}</a>
-                    </button>
-                    <button onClick={this.toggleMenuOpen} type="button" className="nav-item">
-                        <a target="_blank" href="https://www.linkedin.com/in/vicontiveros/">{logos.linkedin}</a>
-                    </button>
-                </nav>
+    return (
+        <nav className={classNameForNavbar}>
+            <div className={classNameForOverlay} onClick={() => toggleMenu()}></div>
+            <button type="button" className={classNameForBurger} onClick={() => toggleMenu()}>
+                <span className="material-icons">menu</span>
+            </button>
+            <p className="navbar-title">Vic • Frontend Developer</p>
+            <nav className="navbar-menu">
+                {NavBarElements.map(({ title, href, toNewTab }) => {
+                    return (
+                        <button key={title} onClick={() => toggleMenu()} type="button" className="nav-item">
+                            <a target={toNewTab ? '_blank' : '_self'} rel='noreferrer' href={href}>{title}</a>
+                        </button>
+                    )
+                })}
             </nav>
-        )
-    }
+        </nav>
+    )
 }
 
 export default NavBar;

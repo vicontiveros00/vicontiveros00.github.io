@@ -1,25 +1,23 @@
 import React from "react";
 import './Project.css';
 
-class Project extends React.Component {
-    render() {
-        const { project } = this.props;
-        return (
-            <div className="Project">
-                <div className="image-container">
-                    <img src={project.src} alt={project.name} />
-                </div>
-                <div className="project-info">
-                    <h2>{project.name}</h2>
-                    <p>{project.description}</p>
-                    <div className='project-links'>
-                        {project.liveUrl ? <a href={project.liveUrl}>Live</a> : undefined}
-                        {project.repo ? <a href={project.repo}>Github Repo</a> : undefined}
-                    </div>
+const Project = (props) => {
+    const { name, description, liveUrl, repo, src } = props.project;
+    return (
+        <div className="Project">
+            <div className="image-container">
+                <img src={src} alt={name} />
+            </div>
+            <div className="project-info">
+                <h2>{name}</h2>
+                <p>{description}</p>
+                <div className='project-links'>
+                    {liveUrl ? <a href={liveUrl}>Live</a> : undefined}
+                    {repo ? <a href={repo}>Github Repo</a> : undefined}
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Project;

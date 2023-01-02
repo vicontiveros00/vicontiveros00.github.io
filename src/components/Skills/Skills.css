@@ -75,6 +75,11 @@ ol li {
     background-color: #121212;
 }
 
+.run-button:disabled {
+    color: gray;
+    cursor: default;
+}
+
 .spinner {
     border-radius: 50%;
     position: absolute;
