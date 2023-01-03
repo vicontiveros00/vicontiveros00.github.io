@@ -1,0 +1,14 @@
+.error-message {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.error-message a {
+    color: #f3f3f3;
+    text-decoration: underline;
+}
+
+.error-message a:hover {
+    color: #fff;
+}

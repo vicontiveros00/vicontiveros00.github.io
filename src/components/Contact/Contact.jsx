@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Contact.css';
-import Spinner from '../../media/loading.png';
+import PulseLoader from "react-spinners/PulseLoader";
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
@@ -68,12 +68,15 @@ const Contact = () => {
                     <button type="submit" className="submit" disabled={state.submitting} onClick={() => {
                         email && message && setLoading(true);
                     }}>
-                        {isLoading ? <img src={Spinner} alt="" className="contact-spinner"/> : <p>Submit</p>}
+                        {isLoading ? <PulseLoader color="#f3f3f3" cssOverride={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                    }}/> : <p>Submit</p>}
                     </button>
                 </form>
             </div>
         </>
-        )
+    )
 }
 
 export default Contact;

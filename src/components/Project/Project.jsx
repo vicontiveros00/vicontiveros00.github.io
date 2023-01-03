@@ -1,10 +1,11 @@
 import React from "react";
 import './Project.css';
+import 'animate.css';
 
 const Project = (props) => {
     const { name, description, liveUrl, repo, src } = props.project;
     return (
-        <div className="Project">
+        <div className="Project animate__animated animate__fadeIn">
             <div className="image-container">
                 <img src={src} alt={name} />
             </div>

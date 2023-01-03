@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Skills.css'
-import Spinner from '../../media/loading.png';
+import { PulseLoader } from "react-spinners";
 
 const Skills = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -33,7 +33,12 @@ const Skills = () => {
                     <span className="comment">--sqlite 3.39.4</span><span className="blinking">|</span>
                 </div>
                 <div className="ide-output"> 
-                    {isLoading ? <img src={Spinner} className = "spinner" alt='fetching from database...' /> : displaySkills && skillList}
+                    {isLoading ? <PulseLoader color="#f3f3f3" cssOverride={{
+                        display: 'flex',
+                        height: '100%',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}/> : displaySkills && skillList}
                 </div>
             </div>
             <div className="buttons-container">

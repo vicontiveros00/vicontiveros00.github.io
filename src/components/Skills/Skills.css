@@ -80,22 +80,6 @@ ol li {
     cursor: default;
 }
 
-.spinner {
-    border-radius: 50%;
-    position: absolute;
-    width: 2rem;
-    animation: 1.2s linear infinite spinner;
-}
-
-@keyframes spinner {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-}
-
 .buttons-container {
     margin: 0 auto;
     width: 80%;

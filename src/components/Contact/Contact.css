@@ -70,21 +70,6 @@ input, #message {
     padding-top: 2px;
 }
 
-.contact-spinner {
-    border-radius: 50%;
-    width: 1.7rem;
-    animation: 1.2s linear infinite spinner;
-}
-
 #email {
     font-family: "Poppins";
-}
-
-@keyframes spinner {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
 }

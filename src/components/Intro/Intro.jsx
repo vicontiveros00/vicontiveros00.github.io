@@ -15,7 +15,7 @@ const Intro = () => {
         }, intervalTime)
         return () => clearInterval(interval);
         // eslint-disable-next-line
-    }, [greetingIndex]);
+    }, [greetingIndex]); 0
     
     return (
         <div className="intro">
