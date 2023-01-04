@@ -37,11 +37,6 @@ a:hover {
   width: 100%;
 }
 
-.footer {
-  text-align: center;
-  padding: 128px 0 3rem 0;
-}
-
 :target {
   scroll-margin-top: 80px;
 }

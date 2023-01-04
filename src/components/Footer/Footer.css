@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+    padding: 128px 0 3rem 0;
+}
+
+.footer-links {
+    margin: 1rem;
+}
+
+.footer-links a {
+    color: #f3f3f3;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}

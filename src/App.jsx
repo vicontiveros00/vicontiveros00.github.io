@@ -8,6 +8,7 @@ import CertificateList from './components/Certificates/CertificateList';
 import Skills from './components/Skills/Skills';
 import FunFacts from './components/FunFacts/FunFacts';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import DisplayError from './components/DisplayError/DisplayError';
 
 const App = () => {
@@ -49,9 +50,7 @@ const App = () => {
       <Skills />
       <FunFacts />
       <Contact />
-      <div className="footer">
-        <p>&copy;Vic</p>
-      </div>
+      <Footer />
     </div>
   );
 }

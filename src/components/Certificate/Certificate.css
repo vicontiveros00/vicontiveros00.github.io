@@ -45,10 +45,15 @@
 @media only screen and (max-width: 500px) {
     .Certificate {
       width: 100%;
-      margin: 0 0 2.3rem 0;
+      margin-bottom: 2.3rem;
     }
 
     .Certificate h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .certificates-container {
+        width: 100%;
+        margin: 4.4rem auto;
     }
 }
