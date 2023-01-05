@@ -8,7 +8,7 @@ const FunFacts = () => {
         const currentDate = new Date();
         const yearsSince = currentDate.getFullYear() - lucasBirthDay.getFullYear();
         const monthsSince = currentDate.getMonth() - lucasBirthDay.getMonth();
-        return yearsSince * 12 + monthsSince;
+        return yearsSince * 12 + monthsSince - 1;
     }
 
         return (
