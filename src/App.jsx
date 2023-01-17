@@ -15,11 +15,17 @@ const App = () => {
   const [projects, setProjects] = useState(null);
   const [certificates, setCertificates] = useState(null);
   const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+  const corsProxy = process.env.REACT_APP_CORS_PROXY;
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
     const getProjects = async() => {
       try {
-        const res = await fetch(`${apiUrl}/projects`);
+        const res = await fetch(`${corsProxy}${apiUrl}/projects`, {
+          headers: {
+            authorization: apiKey
+          }
+        });
         const data = await res.json();
         setProjects(data.reverse());
       } catch (err) {
@@ -29,7 +35,11 @@ const App = () => {
     }
     const getCertificates = async() => {
       try {
-        const res = await fetch(`${apiUrl}/certificates`);
+        const res = await fetch(`${corsProxy}${apiUrl}/certificates`, {
+          headers: {
+            authorization: apiKey
+          }
+        });
         const data = await res.json();
         setCertificates(data.reverse());
       } catch (err) {
@@ -39,7 +49,7 @@ const App = () => {
     }
     getProjects();
     getCertificates();
-  }, [apiUrl])
+  }, [apiUrl, apiKey, corsProxy])
 
   return (
     <div className="App">
