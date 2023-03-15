@@ -23,7 +23,7 @@ const Intro = () => {
             <div className="intro-text">
                 <h1 key={greetingIndex} className='animate__animated animate__fadeIn'>{greetings[greetingIndex]} I'm Vic.</h1>
                 <br />
-                <p className="j-text">I'm an aspiring front end developer who loves to continuously learn through building projects.<br />Based in Nokia, Finland. &#127467;&#127470;</p>
+                <p className="j-text">I am currently a Software Designer at Solita FI, hoping to find my place in the tech world by being a part of the Developer Academy 2023.<br />Based in Tampere, Finland. &#127467;&#127470;</p>
             </div>
         </div>
     )
