@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.dc7db65f.css",
-    "main.js": "/static/js/main.122aa1e8.js",
+    "main.js": "/static/js/main.536e3861.js",
     "static/media/vic-himself.png": "/static/media/vic-himself.5cc16003beb395c0678b.png",
     "static/media/react.png": "/static/media/react.8a6fc0a24a800d1e0f4a.png",
     "static/media/background.svg": "/static/media/background.e4ea4f09a503bc8a7d9a.svg",
     "index.html": "/index.html",
     "main.dc7db65f.css.map": "/static/css/main.dc7db65f.css.map",
-    "main.122aa1e8.js.map": "/static/js/main.122aa1e8.js.map"
+    "main.536e3861.js.map": "/static/js/main.536e3861.js.map"
   },
   "entrypoints": [
     "static/css/main.dc7db65f.css",
-    "static/js/main.122aa1e8.js"
+    "static/js/main.536e3861.js"
   ]
 }
