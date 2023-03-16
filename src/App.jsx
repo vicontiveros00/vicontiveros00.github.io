@@ -58,12 +58,8 @@ const App = () => {
           <p>API currently undergoing maintenance or having some errors. Check back in a bit!</p>
         </div>
       )}
+      {/*display an error message if api cant get both endpoints*/}
       <NavBar />
-      {/*<Intro props={{
-        url: apiUrl,
-        proxy: corsProxy,
-        key: apiKey
-      }}/>*/}
       <Intro />
       {projects !== 'error' ? <ProjectList projects={projects}/> : <DisplayError />}
       {certificates !== 'error' ? <CertificateList certificates={certificates} /> : <DisplayError />}
