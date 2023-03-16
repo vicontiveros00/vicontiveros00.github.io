@@ -40,3 +40,10 @@ a:hover {
 :target {
   scroll-margin-top: 80px;
 }
+
+.errormessage {
+  margin-top: 68px;
+  background-color: #f55142;
+  padding: 1rem;
+  text-align: center;
+}

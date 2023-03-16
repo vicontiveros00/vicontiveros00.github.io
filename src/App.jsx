@@ -14,7 +14,7 @@ import DisplayError from './components/DisplayError/DisplayError';
 const App = () => {
   const [projects, setProjects] = useState(null);
   const [certificates, setCertificates] = useState(null);
-  const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+  const apiUrl = process.env.REACT_APP_API_URL;
   const corsProxy = process.env.REACT_APP_CORS_PROXY;
   const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -53,7 +53,17 @@ const App = () => {
 
   return (
     <div className="App">
+      {projects === 'error' && certificates === 'error' && (
+        <div className="errormessage">
+          <p>API currently undergoing maintenance or having some errors. Check back in a bit!</p>
+        </div>
+      )}
       <NavBar />
+      {/*<Intro props={{
+        url: apiUrl,
+        proxy: corsProxy,
+        key: apiKey
+      }}/>*/}
       <Intro />
       {projects !== 'error' ? <ProjectList projects={projects}/> : <DisplayError />}
       {certificates !== 'error' ? <CertificateList certificates={certificates} /> : <DisplayError />}
